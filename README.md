@@ -8,7 +8,11 @@ This is for **Apple Silicon devices** with **macOS 11+** only.
 
 `TARGET = arm64-apple-macos11`
 
+<details>
+<summary>demo</summary>
+  
 ![](demo.gif)
+</details>
 
 Installation
 ------------
