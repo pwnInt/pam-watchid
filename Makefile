@@ -1,7 +1,7 @@
 VERSION = 2
 LIBRARY_NAME = pam_watchid.so
 DESTINATION = /usr/local/lib/pam
-TARGET = x86_64-apple-macosx10.15
+TARGET = arm64-apple-macos11
 
 all:
 	swiftc watchid-pam-extension.swift -o $(LIBRARY_NAME) -target $(TARGET) -emit-library
@@ -11,3 +11,4 @@ install: all
 	cp $(LIBRARY_NAME) $(DESTINATION)/$(LIBRARY_NAME).$(VERSION)
 	chmod 444 $(DESTINATION)/$(LIBRARY_NAME).$(VERSION)
 	chown root:wheel $(DESTINATION)/$(LIBRARY_NAME).$(VERSION)
+	echo 'auth       sufficient     /usr/local/lib/pam/pam_watchid.so' >> /etc/pam.d/sudo_local
