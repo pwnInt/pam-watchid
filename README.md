@@ -2,6 +2,8 @@ PAM WatchID
 -----------
 A PAM plugin for authenticating using the new kLAPolicyDeviceOwnerAuthenticationWithBiometricsOrWatch API in macOS 10.15, written in Swift.
 
+Would help when running on a MacBook with lid closed.
+
 This is for **Apple Silicon devices** with **macOS 11+** only.
 
 `TARGET = arm64-apple-macos11`
