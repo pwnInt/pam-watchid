@@ -2,7 +2,7 @@ PAM WatchID
 -----------
 A PAM plugin for authenticating using the new kLAPolicyDeviceOwnerAuthenticationWithBiometricsOrWatch API in macOS 10.15, written in Swift.
 
-The API calls for authentication on Apple Watch if Biometric methods aren't detected or unavailable,
+The API calls for authentication on Apple Watch if no biometry authentication methods are detected or unavailable,
 and this would help when it's running on a MacBook with lid closed.
 
 This is for **Apple Silicon devices** with **macOS 11+** only.
